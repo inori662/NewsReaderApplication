@@ -32,7 +32,11 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.glide)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
+    implementation(libs.swiperefreshlayout)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
