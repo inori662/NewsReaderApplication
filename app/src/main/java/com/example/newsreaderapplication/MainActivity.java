@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchArticles() {
         swipeRefreshLayout.setRefreshing(true);
-        Call<NewsResponse> call = apiService.getTopHeadlines(API_KEY, "en", "us");
+        Call<NewsResponse> call = apiService.getTopHeadlines(API_KEY, "en", "us", 50); // 👈 Get 50 articles
 
 
         call.enqueue(new Callback<NewsResponse>() {

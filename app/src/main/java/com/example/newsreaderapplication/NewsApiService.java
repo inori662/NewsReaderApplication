@@ -9,6 +9,8 @@ public interface NewsApiService {
     Call<NewsResponse> getTopHeadlines(
             @Query("token") String apiKey,
             @Query("lang") String lang,
-            @Query("country") String country
+            @Query("country") String country,
+            @Query("max") int maxResults // 👈 Add this line
     );
+
 }
